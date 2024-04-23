@@ -288,9 +288,9 @@ func (s *OpenAI) completionRequestFromConfig(cfg ai.LLMConfig) openaiClient.Chat
 	return openaiClient.ChatCompletionRequest{
 		Model:            cfg.Model,
 		MaxTokens:        cfg.MaxGeneratedTokens,
-		Temperature:      1.0,
-		TopP:             1.0,
-		FrequencyPenalty: 0,
+		Temperature:      0.3,
+		TopP:             0.8,
+		FrequencyPenalty: 1.12,
 		PresencePenalty:  0,
 	}
 }
