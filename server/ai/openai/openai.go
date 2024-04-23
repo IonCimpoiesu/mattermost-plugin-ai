@@ -28,7 +28,7 @@ type OpenAI struct {
 	streamingTimeout time.Duration
 }
 
-const StreamingTimeoutDefault = 10 * time.Second
+const StreamingTimeoutDefault = 30 * time.Second
 
 const MaxFunctionCalls = 10
 
